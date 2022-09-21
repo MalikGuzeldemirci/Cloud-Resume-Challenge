@@ -1,5 +1,5 @@
 # Cloud Resume Challenge
-This project is my solution to cloud resume challenge which creates a serverless website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/)
+This project is my solution to cloud resume challenge which creates a serverless website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/).
 
 ### Prerequisites
 1. AWS Account
@@ -16,7 +16,7 @@ Run this commands inside working directory.
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/sam-build.png)
 3. Use "sam deploy --guided" command and complete the config questions. Make sure to choose region as us-east-1
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/sam-deploy.png)
-4. Wait for the certificate to be created then go to AWS Certificate Manager and validate your domain name (for more information check [here](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html)
+4. Wait for the certificate to be created then go to AWS Certificate Manager and validate your domain name (for more information check [here](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html))
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/certificatepng.png)
 5. After the validation and some time "sam deploy --guided" command will be completed.
 6. Go to getCount funciton and change FunctionName parameter inside invoke funtion as your ARN of AWS incrementCount lambda function
