@@ -28,5 +28,6 @@ Run this commands inside working directory.
 9. Run createTableItem.py file to add column named VisitCount to your table element
 10. Use "sam build" and "sam deploy" commands again
 11. CI/CD part was handled in github/workflow/main.yaml file. You just need to upload all files to github repository and add your AWS keys named as AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY in github secrets.
+![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/Secrets.png)
 
 **Note: If you change any other my name variables inside any file such as BucketName that I used in my code, you have to rearrange my code according to it.**
