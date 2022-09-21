@@ -3,8 +3,8 @@ This project is my solution to cloud resume challenge which creates a serverless
 
 ### Prerequisites
 1. AWS Account
-2. AWS CLI installed(for more information check [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) 
-3. Domain Name (for more information check [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
+2. AWS CLI installed(for more information check [here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)) 
+3. Domain Name (for more information check [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html))
 
 ### Building Website as Infrastucture as Code
 Run this commands inside working directory.
