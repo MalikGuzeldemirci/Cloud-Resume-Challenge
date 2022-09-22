@@ -1,5 +1,5 @@
 # Cloud Resume Challenge
-This project is my solution to cloud resume challenge which creates a serverless website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/).
+This project is my solution to cloud resume challenge which creates a website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/).
 
 ### Prerequisites
 1. AWS Account
