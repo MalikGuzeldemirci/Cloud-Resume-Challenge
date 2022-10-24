@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hi 👋 I’m Malik! </title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar bg-light">
@@ -13,37 +13,41 @@
         <span class="navbar-brand mb-0 fw-normal" style="font-size:16px">malikgüzeldemirci</span>
       </div>
     </nav>
-    <div class="container" style = "padding:100px;"> 
-      <div style ="padding:50px;">
+
+    <div class="container-md">
+      <div class="box1">
+        <div class="row">
           <div>
-            <img src = "../images/MyPhoto.jpg" class="img-fluid" style = "height:100px; width:100px;" alt ="my photo">
+            <img src = "images/MyPhoto.jpg" class="img-fluid" style = "height:100px; width:100px;" alt ="my photo">
           </div>
-          <br>
           <div class ="h1">Hi 👋 I’m Malik!</div>
           <div class = "h3">This website is a result of the completion of the 
             <a href = "https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank" style="text-decoration:none;" class="text-primary">cloud resume challenge.</a>
             If you want to see the details about how I did it, you can read the post blog below and review my github repository
           </div>
-          <br>
-          <div class ="row">
-            <div class = "col-6">
-                <div>🎓  CS @ <span>
-                  <a href = "https://bbf.itu.edu.tr/" target="_blank" style="text-decoration:none;" class ="text-muted">İTÜ</a>
-                  <span><strong>:</strong> Undergraduate</span>
-                </span>
-                </div>
-                <div>
-                  <span>📍 Lives in Turkey</span>
-                </div>
-                <div>
-                  <span>🌎 Speaks English, Turkish</span>
-                </div>
-            </div>
-            <div class = "col-6 d-flex justify-content-end">
-              <img src = "../images/man.jpg" class="img-fluid" style = "height:100px; width:100px;">
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
             <br>
+            <div>🎓  CS @ <span>
+              <a href = "https://bbf.itu.edu.tr/" target="_blank" style="text-decoration:none;" class ="text-muted">İTÜ</a>
+              <span><strong>:</strong> Undergraduate</span>
+            </span>
+            </div>
+            <div>
+              <span>📍 Lives in Turkey</span>
+            </div>
+            <div>
+              <span>🌎 Speaks English, Turkish</span>
+            </div>  
           </div>
+          <div class="col-md">
+            <div class = "d-flex justify-content-md-end">
+              <img src = "images/man.jpg" class="img-fluid image">
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <table class="table table table-hover">
             <thead>
               <tr>
@@ -66,36 +70,37 @@
             </tbody>
            </table>
            <br>
-          <div>
-            <div class = "d-flex justify-content-end">
-              <div>
-                <a href = "https://www.linkedin.com/in/malik-g%C3%BCzeldemirci-463b99221/" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Linkedin&nbsp;</a>
-              </div>
-              <div>
-                <a href = "https://github.com/MalikGuzeldemirci" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Github&nbsp;</a>
-              </div>
-              <div>
-                <a href = "../MyResume/MyResume.pdf" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Resume&nbsp;</a>
-              </div>
+        </div>
+        <div class="row">
+          <div class = "d-flex justify-content-md-end" style="padding:0px;">
+            <div>
+              <a href = "https://www.linkedin.com/in/malik-g%C3%BCzeldemirci-463b99221/" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Linkedin&nbsp;</a>
             </div>
-            <div class = "d-flex justify-content-center">
-              <span id="VisitCount"></span>
+            <div>
+              <a href = "https://github.com/MalikGuzeldemirci" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Github&nbsp;</a>
+            </div>
+            <div>
+              <a href = "../MyResume/MyResume.pdf" target="_blank" style="text-decoration:none;" class ="text-muted">&nbsp;Resume&nbsp;</a>
             </div>
           </div>
+          <div class = "d-flex justify-content-center">
+            <span id="VisitCount"></span>
+          </div>
+        </div>
       </div>
     </div>
     <script>
-        var url ="https://q58obb6tpj.execute-api.us-east-1.amazonaws.com/Prod/get/" 
-          fetch(url)
-            .then(function (response) {
-                return response.json()
-            })  
-            .then(function (Json) {
-                document.querySelector("#VisitCount").innerHTML = "Visit Number: " + Json.VisitCount;
-            })
-            .catch(function (error) {
-                console.log("Error: " + error)
-            })
+      var url ="https://q58obb6tpj.execute-api.us-east-1.amazonaws.com/Prod/get/" 
+        fetch(url)
+          .then(function (response) {
+              return response.json()
+          })  
+          .then(function (Json) {
+              document.querySelector("#VisitCount").innerHTML = "Visit Number: " + Json.VisitCount;
+          })
+          .catch(function (error) {
+              console.log("Error: " + error)
+          })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
