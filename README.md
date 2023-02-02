@@ -1,5 +1,5 @@
 # Cloud Resume Challenge
-This project is my solution to cloud resume challenge which creates a website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/).
+This project is my solution to cloud resume challenge which creates a serverless website with visiter counter using AWS. You can see the challenge [here](https://cloudresumechallenge.dev/).
 
 ### Prerequisites
 1. AWS Account
@@ -16,10 +16,10 @@ Run this commands inside working directory.
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/sam-build.png)
 3. Use "sam deploy --guided" command and complete the config questions. Make sure to choose region as us-east-1
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/sam-deploy.png)
-4. Wait for the certificate to be created then go to AWS Certificate Manager and validate your domain name (for more information check [here](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html))
+4. Wait for the certificate to be created, then go to AWS Certificate Manager and validate your domain name (for more information check [here](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html))
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/certificatepng.png)
 5. After the validation and some time "sam deploy --guided" command will be completed.
-6. Go to getCount funciton and change FunctionName parameter inside invoke funtion as your ARN of AWS incrementCount lambda function
+6. Go to getCount function and change FunctionName parameter inside invoke function as your ARN of AWS incrementCount lambda function
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/getCount.png)
 7. Upload your website files (including index.html) inside website directory and make sure you fetch your api inside your html file if you want to count visit number
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/fetch.png)
@@ -30,4 +30,4 @@ Run this commands inside working directory.
 11. CI/CD part was handled in github/workflow/main.yaml file. You just need to upload all files to github repository and add your AWS keys named as AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY in github secrets.
 ![alt text](https://github.com/MalikGuzeldemirci/Cloud-Resume-Challenge/blob/master/README.md-photos/Secrets.png)
 
-**Note: If you change any other my name variables inside any file such as BucketName that I used in my code, you have to rearrange my code according to it.**
+**Note: If you change any other variable names inside any file such as BucketName that I used in my code, you have to rearrange my code according to it.**
